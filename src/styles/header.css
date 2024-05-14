@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-container {
+  width: 610px;
+  height: 200px;
+  transform: rotate(-5deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.header-logo {
+  background: url('../assets/header/logo-nxtwave-transparent\ 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 60%;
+  position: absolute;
+  transform: rotate(5deg);
+}
+
+.header-footprints {
+  position: absolute;
+  top: -15px;
+  left: -50px;
+  width: 7rem;
+  height: 7rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 1280px) {
+  .header-container {
+    transform: rotate(-4deg);
+    width: 450px;
+    height: 140px;
+  }
+
+  .header-logo {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header-container {
+    width: 300px;
+    height: 100px;
+  }
+
+  .header-footprints {
+    top: -10px;
+    left: -40px;
+    width: 5rem;
+  }
+}

@@ -1,0 +1,163 @@
+.container-sectioninfo {
+  width: 100%;
+  height: 63vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+}
+
+.sectioninfo-texts {
+  align-self: flex-end;
+  grid-column: 2 / 3;
+  display: inherit;
+}
+
+.sectioninfo-texts img {
+  max-width: 40vw;
+}
+
+.sectioninfo-texts img:nth-child(4) {
+  margin-top: 4rem;
+}
+
+.sectioninfo-polaroid {
+  background: url('../assets/video/Polaroid1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 31vw;
+  height: 31vw;
+  position: absolute;
+  right: 0;
+  bottom: -10rem;
+}
+
+.sectioninfo-polaroid:hover {
+  background: url('../assets/video/Polaroid2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 31vw;
+  height: 31vw;
+  position: absolute;
+  right: 0;
+  bottom: -10rem;
+  transition: all 0.8s;
+}
+
+/* Inicio de sección imagenes fuera de los componentes */
+
+.sectioninfo-margaritas {
+  background: url('../assets//margaritas.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  top: -8rem;
+}
+
+.sectioninfo-margaritas2 {
+  background: url('../assets//margaritas2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14.5vw;
+  height: 14.5vw;
+  position: absolute;
+  right: 0;
+  bottom: -11rem;
+}
+
+.sectioninfo-no-quiero {
+  background: url('../assets/video/no-quiero-vivir.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.sectioninfo-no-quiero:hover {
+  background: url('../assets//video/respiro-aliento-de-Dios.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s;
+}
+
+.sectioninfo-mi-mente {
+  background: url('../assets//video/mi-mente-esta-en-caos.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18vw;
+  height: 18vw;
+  position: absolute;
+  top: -14vh;
+  right: 0;
+}
+
+.sectioninfo-mi-mente:hover {
+  background: url('../assets//video/todo-esto-pasara.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18vw;
+  height: 18vw;
+  position: absolute;
+  top: -14vh;
+  right: 0;
+  transition: all 1s;
+}
+
+.sectioninfo-mi-mente:hover::after {
+  transition: all 1s;
+}
+
+@media (max-width: 1280px) {
+
+.sectioninfo-polaroid {
+    bottom: -2rem;
+  }
+
+  .sectioninfo-polaroid:hover {
+    bottom: -2rem;
+  }
+
+  .sectioninfo-margaritas {
+    width: 18vw;
+    height: 18vw;
+    top: -6rem;
+  }
+
+  .sectioninfo-margaritas2 {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    right: -8px;
+    bottom: -11rem;
+  }
+
+  .sectioninfo-mi-mente {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .sectioninfo-mi-mente:hover {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .sectioninfo-no-quiero:hover {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .sectioninfo-no-quiero {
+    width: 17vw;
+    height: 17vw;
+  }
+
+}

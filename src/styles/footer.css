@@ -1,0 +1,58 @@
+.footer-container {
+  width: 100%;
+  position: relative;
+}
+
+.footer-social {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-social img {
+  max-width: 2.5vw;
+  margin-left: 20px;
+}
+
+.footer-mancha {
+  background: url('../assets/footer/estoy-solo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 11vw;
+  height: 11vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-mancha:hover {
+  background: url('../assets/footer/tu-presencia-bastara.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+@media (max-width: 1280px) {
+.footer-mancha {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .footer-mancha:hover {
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+  }
+}
