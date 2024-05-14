@@ -28,8 +28,12 @@ export const Banner = () => {
           className="banner-presave"
           style={{ opacity: active ? 1 : 0, transition: transition }}
         >
-          <a href="/">
-            <span /> pre-save en spotify
+          <a
+            href="https://youtu.be/M8v_WA0BZao?si=X2VijxjVsOPNEX3R"
+            target="__blank"
+          >
+            <span />
+            Ver video
           </a>
         </div>
       </div>
