@@ -94,27 +94,27 @@ export const Band = () => {
         <div className="band-members">
           <div className="band-members-img">
             <button
-              onClick={() => handleClick("santiago")}
+              onMouseEnter={() => handleClick("santiago")}
               className="band-button band-button-santi"
             />
             <button
-              onClick={() => handleClick("stevie")}
+              onMouseEnter={() => handleClick("stevie")}
               className="band-button band-button-stevie"
             />
             <button
-              onClick={() => handleClick("JD")}
+              onMouseEnter={() => handleClick("JD")}
               className="band-button band-button-JD"
             />
             <button
-              onClick={() => handleClick("gonzo")}
+              onMouseEnter={() => handleClick("gonzo")}
               className="band-button band-button-gonzo"
             />
             <button
-              onClick={() => handleClick("sami")}
+              onMouseEnter={() => handleClick("sami")}
               className="band-button band-button-sami"
             />
             <button
-              onClick={() => handleClick("christy")}
+              onMouseEnter={() => handleClick("christy")}
               className="band-button band-button-christy"
             />
             <div
