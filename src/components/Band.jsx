@@ -3,9 +3,9 @@ import AsiVivimos from "../assets/band/asi-vivimos-esta-cancion.png";
 import Santiago from "../assets/band/santiago.svg";
 import Stevie from "../assets/band/stevie.svg";
 import JD from "../assets/band/JD.svg";
-import Gonzo from "../assets/band/gonzo.svg";
+import Gonzo from "../assets/band/gonzo.png";
 import Sami from "../assets/band/sami.svg";
-import Tap from "../assets/icons/tap.gif";
+import Christy from "../assets/band/Christy.png";
 
 import "../styles/band.css";
 import { useEffect, useState } from "react";
@@ -72,6 +72,14 @@ export const Band = () => {
         );
         setPersonPosition("band-member-person-right");
         break;
+      case "christy":
+        setImage(Christy);
+        setAlt("Imagen Christy integrande de la banda");
+        setTextPerson(
+          "Christy: Yo también sé lo que se siente un ataque de ansiedad. Mi sueño con esta canción es que seas libre y encuentres la paz de Dios."
+        );
+        setPersonPosition("band-member-person-left");
+        break;
       default:
         console.log("Otro");
         break;
@@ -110,6 +118,10 @@ export const Band = () => {
             <button
               onClick={() => handleClick("sami")}
               className="band-button band-button-sami"
+            />
+            <button
+              onClick={() => handleClick("christy")}
+              className="band-button band-button-christy"
             />
           </div>
           <div
