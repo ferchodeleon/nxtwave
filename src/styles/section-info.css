@@ -1,6 +1,6 @@
 .container-sectioninfo {
   width: 100%;
-  height: 63vh;
+  height: 60%;
   position: relative;
   display: grid;
   grid-template-columns: 20% 45% 35%;

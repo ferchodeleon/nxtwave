@@ -1,13 +1,14 @@
 .sectionVideo-container {
   width: 100%;
-  height: 80vh;
+  height: 900px;
   background: url('../assets/video/manchas-video.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-auto-columns: minmax(80px, auto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sectionVideo-container img {
@@ -24,27 +25,55 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 38vw;
-  height: 22vw;
+  width: 90%;
+  height: 45vh;
+  margin: 0 auto;
 }
 
 .sectionVideo-video-background {
   position: absolute;
   background-image: url('../assets/video/marco-video.svg');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   height: 100%;
 }
 
-.sectionVideo-container div:nth-child(2) .sectionVideo-video {
+.sectionVideo-video {
   position: absolute;
   align-content: center;
-  width: 93%;
+  width: 80%;
   height: 87%;
 }
 
+.sectionVideo-text {
+  margin: 0 auto;
+  width: 70%;
+}
 
 .sectionVideo-container div:nth-child(2) img:nth-child(2) {
   max-width: 40vw;
+}
+
+@media (max-width: 900px) {
+  .sectionVideo-video-background {
+    display: none;
+  }
+
+  .sectionVideo-text {
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .sectionVideo-container {
+    height: 80vh;
+  }
+
+  .sectionVideo-text {
+    margin: 0 auto;
+    width: 90%;
+  }
 }

@@ -87,6 +87,9 @@ export const Band = () => {
         <div className="band-title">
           <img src={LogoNxtwave} alt="Logo nxtwave con una linea en el medio" />
           <img src={AsiVivimos} alt="Texto, Así vivimos esta canción" />
+          <p className="band-container-experience">
+            Para una mejor experiencia visita esta página en una computador :)
+          </p>
         </div>
         <div className="band-members">
           <div className="band-members-img">
@@ -114,17 +117,17 @@ export const Band = () => {
               onClick={() => handleClick("christy")}
               className="band-button band-button-christy"
             />
-          </div>
-          <div
-            className={`band-member-person ${personPosition}`}
-            style={{ opacity: loading ? 0 : 1, transition: "opacity 1s" }}
-            onLoad={() => setLoading(false)}
-          >
-            <img src={image} alt={alt} />
-            <p
-              className="band-member-person-text"
-              dangerouslySetInnerHTML={{ __html: textPerson }}
-            ></p>
+            <div
+              className={`band-member-person ${personPosition}`}
+              style={{ opacity: loading ? 0 : 1, transition: "opacity 1s" }}
+              onLoad={() => setLoading(false)}
+            >
+              <img src={image} alt={alt} />
+              <p
+                className="band-member-person-text"
+                dangerouslySetInnerHTML={{ __html: textPerson }}
+              ></p>
+            </div>
           </div>
         </div>
         <div className="band-flower" />
