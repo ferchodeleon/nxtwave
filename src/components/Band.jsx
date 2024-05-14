@@ -1,14 +1,14 @@
 import LogoNxtwave from "../assets/band/logo-nxtwave.png";
 import AsiVivimos from "../assets/band/asi-vivimos-esta-cancion.png";
-import Santiago from "../assets/band/santiago.svg";
-import Stevie from "../assets/band/stevie.svg";
-import JD from "../assets/band/JD.svg";
+import Santiago from "../assets/band/santiago.png";
+import Stevie from "../assets/band/stevie.png";
+import JD from "../assets/band/JD.png";
 import Gonzo from "../assets/band/gonzo.png";
-import Sami from "../assets/band/sami.svg";
+import Sami from "../assets/band/sami.png";
 import Christy from "../assets/band/Christy.png";
 
 import "../styles/band.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Band = () => {
   const [visible, setVisible] = useState(false);
@@ -17,15 +17,6 @@ export const Band = () => {
   const [textPerson, setTextPerson] = useState("");
   const [personPosition, setPersonPosition] = useState("");
   const [loading, setLoading] = useState(false);
-
-  // useEffect(() => {
-  //   const typingSpeed = 120;
-  //   const textToType =
-  //     "Santi Garcia: Inhalar y exhalar nos ayuda a poner todo en perspectiva. En el proceso de la respiración ocurre un fenómeno de oxigenación y desintoxicación.";
-  //   if (visible) {
-  //     autoType(".band-member-person-text", textToType, typingSpeed);
-  //   }
-  // }, []);
 
   const handleClick = (buttonName) => {
     setLoading(true);
@@ -142,28 +133,3 @@ export const Band = () => {
     </>
   );
 };
-
-function autoType(elementClass, textToType, typingSpeed) {
-  let thhis = document.querySelector(elementClass);
-  thhis.style.position = "relative";
-  thhis.style.display = "inline-block";
-  thhis.innerHTML +=
-    '<div class="cursor" style="right: initial; left: 0;"></div>';
-  let text = textToType.trim().split("");
-  let amntOfChars = text.length;
-  let newString = "";
-  thhis.innerHTML = "|";
-  setTimeout(function () {
-    thhis.style.opacity = 1;
-    thhis.previousSibling.remove();
-    thhis.innerHTML = "";
-    for (let i = 0; i < amntOfChars; i++) {
-      (function (i, char) {
-        setTimeout(function () {
-          newString += char;
-          thhis.innerHTML = newString;
-        }, i * typingSpeed);
-      })(i + 1, text[i]);
-    }
-  }, 1000);
-}
