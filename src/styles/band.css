@@ -166,6 +166,13 @@
 
 }
 
+@media (max-height: 1200px ) and ( max-width: 900px) {
+  .band-members-img {
+    width: 60rem;
+    height: 40rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .band-container {
     display: block;
