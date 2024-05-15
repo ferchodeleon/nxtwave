@@ -30,61 +30,68 @@
 }
 
 .band-members-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url('../assets/band/band-black-white.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80%;
-  height: 80%;
+  width: 110rem;
+  height: 60rem;
   position: relative;
   justify-self: center;
 }
 
 .band-button {
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 7%;
+  height: 7%;
   background: url('../assets/icons/tap.gif');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 
 .band-button-santi {
   position: absolute;
-  top: 15%;
-  left: 32%;
+  top: 20%;
+  left: 34%;
 }
 
 .band-button-christy {
   position: absolute;
-  top: 15%;
-  left: 40%;
-}
-
-.band-button-stevie {
-  position: absolute;
-  top: 44%;
-  right: 44%;
-}
-
-.band-button-JD {
-  position: absolute;
-  top: 55%;
-  right: 56%;
+  top: 20%;
+  left: 42%;
 }
 
 .band-button-gonzo {
   position: absolute;
-  top: 13%;
-  right: 45%;
+  top: 18%;
+  right: 41%;
 }
 
 .band-button-sami {
   position: absolute;
-  top: 8%;
-  right: 35%;
+  top: 13%;
+  right: 30%;
 }
+
+.band-button-stevie {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+}
+
+.band-button-JD {
+  position: absolute;
+  top: 62%;
+  right: 51%;
+}
+
+
 
 .band-member-person {
   position: absolute;
@@ -143,6 +150,20 @@
 
 .band-container-experience {
   display: none;
+}
+
+@media (max-height: 850px) {
+
+  .band-members-img {
+    width: 78rem;
+    height: 40rem;
+  }
+
+  .band-flower {
+    width: 15rem;
+    height: 40rem;
+  }
+
 }
 
 @media (max-width: 1000px) {
