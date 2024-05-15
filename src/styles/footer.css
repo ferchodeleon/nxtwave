@@ -55,4 +55,9 @@
     left: 0;
     transition: all 1s;
   }
+
+  .footer-social img {
+    max-width: 2.5rem;
+    margin-left: 20px;
+  }
 }
