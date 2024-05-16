@@ -88,7 +88,7 @@ export const Band = () => {
           <img src={LogoNxtwave} alt="Logo nxtwave con una linea en el medio" />
           <img src={AsiVivimos} alt="Texto, Así vivimos esta canción" />
           <p className="band-container-experience">
-            Para una mejor experiencia visita esta página en una computador :)
+            Para una mejor experiencia, visita esta página en un computador :)
           </p>
         </div>
         <div className="band-members">
