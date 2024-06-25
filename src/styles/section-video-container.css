@@ -1,14 +1,133 @@
+@keyframes moveLeftToRight-1 {
+  0% {
+    transform: translate(-30%, 0);
+  }
+
+  100% {
+    transform: translate(300%, 40%);
+  }
+}
+
+@keyframes moveLeftToRight-2 {
+  0% {
+    transform: translate(-35%, 0);
+  }
+
+  100% {
+    transform: translate(300%, 40%);
+  }
+}
+
+@keyframes moveLeftToRight-3 {
+  0% {
+    transform: translate(-40%, 0);
+  }
+
+  100% {
+    transform: translate(300%, 40%);
+  }
+}
+
 .sectionVideo-container {
-  width: 100%;
-  height: 900px;
-  background: url('../assets/video/manchas-video.svg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 5rem;
+  background: url('../assets/video/cinta-roja.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: right;
+  background-position: 180%;
+  overflow: hidden;
+}
+
+.sectionVideo-misil-1 {
+  position: absolute;
+  left: 2px;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('../assets/video/misil-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-1 5s linear infinite;
+}
+.sectionVideo-misil-2 {
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  width: 8rem;
+  height: 8rem;
+  background-image: url('../assets/video/misil-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-2 5s linear infinite;
+}
+.sectionVideo-misil-3 {
+  position: absolute;
+  top: 20%;
+  left: 2px;
+  width: 6rem;
+  height: 6rem;
+  background-image: url('../assets/video/misil-3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-3 5s linear infinite;
+}
+.sectionVideo-misil-4 {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 20rem;
+  height: 20rem;
+  background-image: url('../assets/video/misil-4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-1 5s linear infinite;
+}
+.sectionVideo-misil-5 {
+  position: absolute;
+  top: 60%;
+  left: 2px;
+  width: 15rem;
+  height: 15rem;
+  background-image: url('../assets/video/misil-5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-2 5s linear infinite;
+}
+.sectionVideo-misil-6 {
+  position: absolute;
+  left: 2px;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('../assets/video/misil-6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: moveLeftToRight-3 5s linear infinite;
+}
+
+.sectionVideo-puntos {
+  position: absolute;
+  bottom: 0rem;
+  background-image: url('../assets/video/puntos.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40%;
+  height: 5rem;
+  z-index: 5;
+}
+
+.sectionVideo-background {
+  background: url('../assets/video/lambre.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 1rem;
 }
 
 .sectionVideo-container img {
@@ -21,18 +140,17 @@
 }
 
 .sectionVideo-video-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 83% auto;
   align-items: center;
-  justify-content: center;
   position: relative;
-  width: 60rem;
-  height: 30rem;
-  margin: 0 auto;
+  height: 100%;
 }
 
 .sectionVideo-video-background {
   position: absolute;
-  background-image: url('../assets/video/marco-video.svg');
+  background-image: url('');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,14 +160,17 @@
 
 .sectionVideo-video {
   position: absolute;
-  align-content: center;
-  width: 80%;
-  height: 87%;
+  grid-column: 1 / 2;
+  justify-self: center;
+  width: 30vw;
+  height: 15vw;
 }
 
 .sectionVideo-text {
+  grid-row: 2 / 3;
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
+  align-self: start;
 }
 
 .sectionVideo-container div:nth-child(2) img:nth-child(2) {
