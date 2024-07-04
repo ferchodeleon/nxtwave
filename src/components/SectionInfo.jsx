@@ -36,11 +36,16 @@ export const SectionInfo = () => {
         <div className="sectioninfo-no-quiero" />
         <div className="sectioninfo-mi-mente" />
         <div className="sectioninfo-texts sectioninfo-text-perfecta">
-          <img src={ImagePerfecta} alt="Perfecta Paz" />
+          <img
+            src={ImagePerfecta}
+            width="100%"
+            height="100%"
+            alt="Perfecta Paz"
+          />
         </div>
         <div className="sectioninfo-texts sectioninfo-text-paz">
           <div className="sectioninfo-decorator-text" />
-          <img src={ImagePaz} alt="" />
+          <img src={ImagePaz} width="100%" height="100%" alt="" />
         </div>
         <div className="sectioninfo-polaroid">
           <div className="sectioninfo-margaritas2" />
