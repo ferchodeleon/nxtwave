@@ -28,6 +28,16 @@
   }
 }
 
+@keyframes upVideo {
+  0% {
+    transform: translate(0, -20%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .sectionVideo-container {
   display: flex;
   align-items: center;
@@ -161,6 +171,7 @@
   height: 18vw;
   border-radius: 8px;
   padding-bottom: 5px;
+  animation: upVideo 2s linear;
 }
 
 .sectionVideo-text {
