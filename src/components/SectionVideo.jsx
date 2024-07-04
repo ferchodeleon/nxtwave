@@ -1,7 +1,11 @@
+import { useRef } from "react";
 import Cenefa from "../assets/video/cenefa-perfecta-paz.png";
 import "../styles/section-video-container.css";
+import { LazyLoading } from "./LazyLoading";
 
 export const SectionVideo = () => {
+  const videoContainerRef = useRef(null);
+  const isVisible = LazyLoading(videoContainerRef);
   return (
     <>
       <section className="sectionVideo-container">
@@ -12,16 +16,20 @@ export const SectionVideo = () => {
         <div className="sectionVideo-misil-5" />
         <div className="sectionVideo-puntos" />
         <div className="sectionVideo-background">
-          <div className="sectionVideo-video-container">
-            <iframe
-              className="sectionVideo-video"
-              src="https://www.youtube.com/embed/dGhfwnpzzCg?si=NMFkR7W2VDGQMUdv"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <div className="sectionVideo-video-container" ref={videoContainerRef}>
+            {isVisible ? (
+              <iframe
+                className="sectionVideo-video"
+                src="https://www.youtube.com/embed/dGhfwnpzzCg?si=NMFkR7W2VDGQMUdv"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <div />
+            )}
             <img
               className="sectionVideo-text"
               src={Cenefa}
