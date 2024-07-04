@@ -1,31 +1,46 @@
-import "../styles/section-info.css";
-import ComoSonriendo from "../assets/video/como_sonriendo.png";
-import MeDicenQueTodo from "../assets/video/me-dicen-que.png";
-import TeHasSentido from "../assets/video/te-has-sentido-asi.png";
-import DescubrePoder from "../assets/video/descubre.png";
 import { SectionVideo } from "./SectionVideo";
 
+import ImagePerfecta from "../assets/info/texto-perfecta.png";
+import ImagePaz from "../assets/info/texto-paz.png";
+
+import "../styles/section-info.css";
+import { useEffect, useState } from "react";
+
 export const SectionInfo = () => {
+  const [exploded, setExploded] = useState(false);
+  const [explodedGranada, setExplodedGranada] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setExploded((prev) => !prev);
+      setExplodedGranada((prev) => !prev);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section className="container-sectioninfo">
-        <div className="sectioninfo-margaritas" />
+        <div className="sectioninfo-raya" />
+        <div
+          className={`sectioninfo-estrella ${
+            exploded ? "new-image" : "exploding"
+          }`}
+        />
+        <div
+          className={`sectioninfo-granada ${
+            explodedGranada ? "new-granada" : "exploding"
+          }`}
+        />
         <div className="sectioninfo-no-quiero" />
         <div className="sectioninfo-mi-mente" />
-        <div className="sectioninfo-texts">
-          <img
-            src={ComoSonriendo}
-            alt="imagen ¿cómo seguir sonriendo con el peso de la anciedad"
-          />
-          <img
-            src={MeDicenQueTodo}
-            alt="imagen Me dicen que todo está en mi mente, que mi problema es que confío suficiente.."
-          />
-          <img src={TeHasSentido} alt="Imagen ¿Te has sentido así?" />
-          <img
-            src={DescubrePoder}
-            alt="Imagen Descubre el poder del aliento de Dios"
-          />
+        <div className="sectioninfo-texts sectioninfo-text-perfecta">
+          <img src={ImagePerfecta} alt="Perfecta Paz" />
+        </div>
+        <div className="sectioninfo-texts sectioninfo-text-paz">
+          <div className="sectioninfo-decorator-text" />
+          <img src={ImagePaz} alt="" />
         </div>
         <div className="sectioninfo-polaroid">
           <div className="sectioninfo-margaritas2" />
