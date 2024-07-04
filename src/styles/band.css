@@ -188,6 +188,16 @@
   display: none;
 }
 
+@media (max-width: 1700px) {
+  .band-logo {
+    width: 100%;
+  }
+  
+  .band-logo img {
+    max-width: 130%;
+  }
+}
+
 @media (max-width: 1300px) {
   .band-members-img {
     width: 50rem;
