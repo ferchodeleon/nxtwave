@@ -8,7 +8,6 @@ header {
 .header-container {
   width: 610px;
   height: 200px;
-  transform: rotate(-5deg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -17,13 +16,13 @@ header {
 }
 
 .header-logo {
-  background: url('../assets/header/logo-nxtwave-transparent\ 1.png');
+  background: url('../assets/header/logo-nxtwave.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
   height: 60%;
   position: absolute;
-  transform: rotate(5deg);
+  top: 8rem;
 }
 
 .header-footprints {
