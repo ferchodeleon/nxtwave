@@ -24,7 +24,7 @@
   }
 
   100% {
-    transform: translate(300%, 40%);
+    transform: translate(500%, 50%);
   }
 }
 
@@ -46,9 +46,9 @@
 
 .sectionVideo-misil-1 {
   position: absolute;
-  left: 2px;
-  width: 10rem;
-  height: 10rem;
+  left: -5%;
+  width: 8%;
+  height: 8%;
   background-image: url('../assets/video/misil-1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -56,57 +56,50 @@
 }
 .sectionVideo-misil-2 {
   position: absolute;
-  top: 30%;
-  left: 5px;
-  width: 8rem;
-  height: 8rem;
+  top: 20%;
+  left: -10%;
+  width: 10%;
+  height: 10%;
   background-image: url('../assets/video/misil-2.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: moveLeftToRight-2 5s linear infinite;
 }
+
 .sectionVideo-misil-3 {
   position: absolute;
-  top: 20%;
-  left: 2px;
-  width: 6rem;
-  height: 6rem;
+  top: 30%;
+  left: -5%;
+  width: 6%;
+  height: 6%;
   background-image: url('../assets/video/misil-3.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: moveLeftToRight-3 5s linear infinite;
 }
+
 .sectionVideo-misil-4 {
   position: absolute;
   top: 50%;
   left: 2px;
-  width: 20rem;
-  height: 20rem;
+  width: 12%;
+  height: 12%;
   background-image: url('../assets/video/misil-4.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: moveLeftToRight-1 5s linear infinite;
 }
+
 .sectionVideo-misil-5 {
   position: absolute;
-  top: 60%;
+  top: 40%;
   left: 2px;
-  width: 15rem;
-  height: 15rem;
+  width: 11%;
+  height: 11%;
   background-image: url('../assets/video/misil-5.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: moveLeftToRight-2 5s linear infinite;
-}
-.sectionVideo-misil-6 {
-  position: absolute;
-  left: 2px;
-  width: 10rem;
-  height: 10rem;
-  background-image: url('../assets/video/misil-6.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: moveLeftToRight-3 5s linear infinite;
 }
 
 .sectionVideo-puntos {
@@ -141,7 +134,7 @@
 
 .sectionVideo-video-container {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 90% 10%;
   grid-template-rows: 83% auto;
   align-items: center;
   position: relative;
@@ -161,9 +154,13 @@
 .sectionVideo-video {
   position: absolute;
   grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: end;
   justify-self: center;
-  width: 30vw;
-  height: 15vw;
+  width: 35vw;
+  height: 18vw;
+  border-radius: 8px;
+  padding-bottom: 5px;
 }
 
 .sectionVideo-text {
@@ -177,15 +174,29 @@
   max-width: 40vw;
 }
 
+@media (max-width: 1280px) {
+  .sectionVideo-video {
+    width: 40vw;
+    height: 25vw;
+  }
+}
+
 @media (max-width: 900px) {
 
   .sectionVideo-container {
-    height: 600px;
+    height: 400px;
+    padding-bottom: 2rem;
   }
 
   .sectionVideo-video-container {
-    width: 27rem;
-    height: 14rem;
+    grid-template-columns: 100%;
+    width:100%;
+    height: 100%;
+  }
+
+  .sectionVideo-video {
+    width: 50%;
+    height: 80%;
   }
 
   .sectionVideo-video-background {
@@ -193,18 +204,24 @@
   }
 
   .sectionVideo-text {
-    align-items: center;
+    width: 90%;
   }
 
 }
 
 @media (max-width: 500px) {
   .sectionVideo-container {
-    height: 80vh;
+    height: 50vh;
+  }
+
+  .sectionVideo-video {
+    width: 95%;
+    height: 75%;
   }
 
   .sectionVideo-text {
     margin: 0 auto;
     width: 90%;
+    height: 60%;
   }
 }
