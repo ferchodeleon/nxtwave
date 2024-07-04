@@ -31,9 +31,11 @@ export const SectionVideo = () => {
               <div />
             )}
             <img
+              height="100%"
+              width="100%"
               className="sectionVideo-text"
               src={Cenefa}
-              alt="imagen con el texto Es momento de respirar una vez más, tomar el aliento de Dios para revivir y encontrar su perfecta paz"
+              alt='imagen con el texto "Dame de tu paz tu perfecta paz mi confianza en ti permanece"'
             />
           </div>
         </div>
