@@ -151,16 +151,6 @@
   height: 100%;
 }
 
-.sectionVideo-video-background {
-  position: absolute;
-  background-image: url('');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-}
-
 .sectionVideo-video {
   position: absolute;
   grid-column: 1 / 2;
@@ -208,10 +198,6 @@
   .sectionVideo-video {
     width: 50%;
     height: 80%;
-  }
-
-  .sectionVideo-video-background {
-    display: none;
   }
 
   .sectionVideo-text {
