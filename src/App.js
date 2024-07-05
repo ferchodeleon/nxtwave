@@ -5,8 +5,8 @@ import { Header } from "./components/Header";
 import { SectionInfo } from "./components/SectionInfo";
 import Loading from "./components/loading";
 
-import PerfectaPazImage from "./assets/banner/banner-perfecta-paz.png";
-import WeAreTheRevolutionImage from "./assets/banner/banner-we-are-the-revolution.png";
+import PerfectaPazImage from "./assets/banner/banner-perfecta-paz.webp";
+import WeAreTheRevolutionImage from "./assets/banner/banner-we-are-the-revolution.webp";
 
 import "./styles/main.css";
 
