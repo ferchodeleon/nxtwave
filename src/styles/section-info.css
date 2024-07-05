@@ -152,27 +152,6 @@
   z-index: 5;
 }
 
-.sectioninfo-no-quiero {
-  background: url('');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 15vw;
-  height: 15vw;
-  position: absolute;
-  bottom: 0;
-}
-
-.sectioninfo-no-quiero:hover {
-  background: url('');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 12vw;
-  height: 12vw;
-  position: absolute;
-  bottom: 0;
-  transition: all 1s;
-}
-
 .sectioninfo-mi-mente {
   background: url('');
   background-repeat: no-repeat;
@@ -242,16 +221,6 @@
   .sectioninfo-mi-mente:hover {
     width: 22vw;
     height: 22vw;
-  }
-
-  .sectioninfo-no-quiero:hover {
-    width: 17vw;
-    height: 17vw;
-  }
-
-  .sectioninfo-no-quiero {
-    width: 17vw;
-    height: 17vw;
   }
 
 }
