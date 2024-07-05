@@ -171,19 +171,6 @@
   z-index: 2;
 }
 
-.band-spoiler {
-  background: url('../assets/band/spoiler.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transform: rotate(-110deg);
-  width: 50%;
-  height: 10vw;
-  position: absolute;
-  right: -11%;
-  overflow: hidden;
-}
-
 .band-container-experience {
   display: none;
 }
