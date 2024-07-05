@@ -1,27 +1,28 @@
 * {
-  font-family: 'Qlassy-elegant';
+  font-family: CenturyGothicBlackRegular;
+  font-display: auto;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 @font-face {
-  font-family: WaterResistant;
-  src: url('../assets/fonts/WaterResistant.ttf');
+  font-family: 'CenturyGothicBlack';
+  src: url('../assets/fonts/century-gothic/CenturyGothicPaneuropeanBlack.ttf');
 }
 
 @font-face {
-  font-family: albertsthal;
-  src: url('../assets/fonts/Albertsthal\ Typewriter.ttf');
+  font-family: 'CenturyGothicBlackItalic';
+  src: url('../assets/fonts/century-gothic/CenturyGothicPaneuropeanBlackItalic.ttf');
 }
 
 @font-face {
-  font-family: Tnanti;
-  src: url('../assets/fonts/TNanti-Demo.otf');
+  font-family: CenturyGothicBlackRegular;
+  src: url('../assets/fonts/century-gothic/CenturyGothicPaneuropeanRegular.ttf');
 }
 
 body {
-  background: url('../assets/background-page.png');
+  background: url('../assets/background-page.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
