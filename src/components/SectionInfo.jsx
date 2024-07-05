@@ -33,7 +33,6 @@ export const SectionInfo = () => {
             explodedGranada ? "new-granada" : "exploding"
           }`}
         />
-        <div className="sectioninfo-mi-mente" />
         <div className="sectioninfo-texts sectioninfo-text-perfecta">
           <img
             src={ImagePerfecta}
