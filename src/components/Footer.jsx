@@ -26,6 +26,7 @@ export const Footer = () => {
         <div className="footer-social">
           <a target="__blank" href="https://www.facebook.com/nxtwaaave/">
             <img
+              loading="lazy"
               height="100%"
               width="100%"
               src={Facebook}
@@ -37,6 +38,7 @@ export const Footer = () => {
             href="https://www.youtube.com/channel/UCb3_ZEgqrOEyqSPdrgjBEXQ"
           >
             <img
+              loading="lazy"
               height="100%"
               width="100%"
               src={Youtube}
@@ -45,6 +47,7 @@ export const Footer = () => {
           </a>
           <a target="__blank" href="https://www.instagram.com/nxtwaaave/?hl=en">
             <img
+              loading="lazy"
               height="100%"
               width="100%"
               src={Instagram}
@@ -56,6 +59,7 @@ export const Footer = () => {
             href="https://open.spotify.com/intl-es/artist/3icg8QXxKDihHvzfoC1Vpm?si=WlJpJdKCSQS9Wadv28GC7Q"
           >
             <img
+              loading="lazy"
               height="100%"
               width="100%"
               src={Spotify}
