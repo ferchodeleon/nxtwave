@@ -3,7 +3,7 @@
   grid-template-columns: 15vw 65vw 20vw;
   grid-template-rows: 20% 80%;
   place-items: center;
-  background-image: url('../assets/band/radar-aviones.png');
+  background-image: url('../assets/band/radar-aviones.webp');
   height: 100vh;
   position: relative;
 }
@@ -69,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../assets/band/banda-red.png');
+  background: url('../assets/band/banda-red.webp');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@
 .band-flower {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  background: url('../assets//band/flor-granada.png');
+  background: url('../assets//band/flor-granada.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
