@@ -85,7 +85,7 @@
 }
 
 .sectioninfo-raya {
-  background: url('../assets/info/raya.png');
+  background: url('../assets/info/raya.webp');
   background-repeat: no-repeat;
   background-size: contain;
   width: 12vw;
@@ -127,7 +127,7 @@
 }
 
 .sectioninfo-granada {
-  background: url('../assets/info/granada-top.png');
+  background: url('../assets/info/granada-top.webp');
   background-repeat: no-repeat;
   background-size: contain;
   width: 12vw;
